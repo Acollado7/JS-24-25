@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Test Verdadero o Falso</h1>
+    <div>
+        <p id="1">¿Los Piglins Brutos dan Oro?</p>
+        <button onclick="rojo(1)">Si</button>
+        <button onclick="verde(1)">No</button>
+    </div>
+    <div>
+        <p id="2">¿Los Piglins dan mas de 2 Ender Pearl por tradeo?</p>
+        <button onclick="verde(2)">Si</button>
+        <button onclick="rojo(2)">No</button>
+    </div>
+    <div>
+        <p id="3">¿Los aldeanos trackean mas a los pillagers que a los zombies?</p>
+        <button onclick="verde(3)">Si</button>
+        <button onclick="rojo(3)">No</button>
+    </div>
+    <div>
+        <p id="4">¿Con looting 3 los creeper te sueltan hasta 10 de polvora?</p>
+        <button onclick="rojo(4)">Si</button>
+        <button onclick="verde(4)">No</button>
+    </div>
+    <div>
+        <p id="5">¿Las brujas te pueden dropear hasta 8 de redstone sin looting 3?</p>
+        <button onclick="verde(5)">Si</button>
+        <button onclick="rojo(5)">No</button>
+    </div>
+    <div>
+        <p id="6">¿De las granjas de mobs solo caen creepers, zombies, esqueletos y arañas?</p>
+        <button onclick="rojo(6)">Si</button>
+        <button onclick="verde(6)">No</button>
+    </div>
+    <div>
+        <p id="7">¿Los sapos dan linternas cuando se comen a los magmaCubes?</p>
+        <button onclick="verde(7)">Si</button>
+        <button onclick="rojo(7)">No</button>
+    </div>
+    <script>
+      function verde(id) {
+        document.getElementById(id).style.color="green";
+      }
+      function rojo(id) {
+        document.getElementById(id).style.color="red";
+      }
+
+    </script>
+   
+</body>
+
+</html>
