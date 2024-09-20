@@ -10,7 +10,15 @@
     <script>
 
 let text = "Hello world!";
-let result = text.substring(1, 4);
+let result = "";
+
+function inverteText() {
+    for (i=text.length;i>=0; i--) {
+        result.push(text[i])
+    }
+    
+}
+console.log(result)
 
     </script>
 
