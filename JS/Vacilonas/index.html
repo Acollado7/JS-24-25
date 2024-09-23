@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacilonas</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        function vacilona(longitud) {
+            let arr = [longitud];
+            for (let i = 0; i < longitud; i++) {
+                arr[i] = [longitud];
+                for (let j = 0; j < longitud; j++) {
+                    
+                    if (i==0  || j==0 ) {
+                        arr[i][j] = 1;
+                    }else{
+                        arr[i][j] = arr[i-1][j] + arr[i][j-1];
+                    }
+                }
+
+            }
+            return arr;
+        }
+
+        let matriz = vacilona(3);
+
+        console.table(matriz);
+
+
+
+    </script>
+
+</body>
+
+</html>
